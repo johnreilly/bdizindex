@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @prediction.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @prediction.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_prediction_path(@prediction) %> |
+<%= link_to 'Back', predictions_path %>
