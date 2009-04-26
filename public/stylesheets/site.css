@@ -1,0 +1,40 @@
+body {
+  background-color: #f00;
+  color: #fff;
+}
+
+#content {
+  width: 60em;
+  margin: auto;
+  padding: 2em;
+  border: 3px solid #000;
+  background-color: #cc6;
+  color: #111;
+  text-align: center;
+}
+
+#brandon_index {
+  font-size: 30em;
+  line-height: 1em;
+  margin: auto;
+}
+
+#recent_predictions { 
+  margin: 2em auto;
+  padding: .5em;
+  width: 30em;
+  border: 2px solid #111;
+}
+#recent_predictions ul li {
+  list-style: none;
+  text-align: left;
+}
+
+div.prediction_title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+div.prediction_description {
+  margin-bottom: 2em;
+}

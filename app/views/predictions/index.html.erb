@@ -1,22 +1,20 @@
-<h1>Listing predictions</h1>
+<h1>The Brandon Index</h1>
+<div id="brandon_index">
+  <%= @predictions.size %>
+</div>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-  </tr>
 
-<% @predictions.each do |prediction| %>
-  <tr>
-    <td><%=h prediction.title %></td>
-    <td><%=h prediction.description %></td>
-    <td><%= link_to 'Show', prediction %></td>
-    <td><%= link_to 'Edit', edit_prediction_path(prediction) %></td>
-    <td><%= link_to 'Destroy', prediction, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+<%= link_to 'Log a new prediction', new_prediction_path %>
 
-<br />
+<div id="recent_predictions">
+  <h2>Recent Predictions</h2>
 
-<%= link_to 'New prediction', new_prediction_path %>
+  <ul>
+  <% @predictions.each do |prediction| %>
+    <li>
+      <div class="prediction_title"><%=h prediction.title %></div>
+      <div class="prediction_description"><%=h prediction.description %></div>
+    </li>
+  <% end %>
+  </ul>
+</div>
